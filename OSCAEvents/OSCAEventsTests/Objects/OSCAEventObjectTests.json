@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "objectId": "5u08Z1Y2Li",
+      "startDate": {
+        "__type": "Date",
+        "iso": "2022-01-20T23:01:00.000Z"
+      },
+      "endDate": {
+        "__type": "Date",
+        "iso": "2022-01-20T23:02:00.000Z"
+      },
+      "location": {
+        "id": "4523",
+        "address": {
+          "name": "Vogel-Park Solingen",
+          "streetAddress": "Hermann-Löns-Weg 71",
+          "addressLocality": "Solingen",
+          "postalCode": "42697"
+        },
+        "geopoint": {
+          "__type": "GeoPoint",
+          "latitude": 51.1607506,
+          "longitude": 6.9841889
+        }
+      },
+      "offers": [
+        {
+          "price": "32.3",
+          "name": "Standard",
+          "priceCurrency": "EUR"
+        }
+      ],
+      "isAllDay": false,
+      "name": "Vogelpark Solingen",
+      "description": "Der ca. 1,5 Hektar große Park beherbergt rund 300 Tieren aus ca. 80 Arten. Der Park liegt am Rande des Naturschutzgebietes Ohligser Heide und dort bietet sich nach oder vor dem Parkbesuch eine kleine Wanderung an.www.solinger-vogelpark.de/<br> <br>Corona<br>\n<br>\n<br>\nAktuelle Hinweise finden Sie hier:www.solinger-vogelpark.de/<br> <br>Öffnungszeiten<br>\n<br>\n<br>\n<br>\n<br>\nDezember, Januar und Februar: Dienstag – Sonntag 9.00-16.00 Uhr (montags geschlossen)<br>\nMärz: Montag – Sonntag 9.00-17.00 Uhr<br>\nApril bis Oktober: Montag – Sonntag 9.00-18.00 Uhr<br>\nNovember: Montag – Sonntag 9.00-17.00 Uhr<br>\n<br>\nBitte beachten Sie, dass die tatsächlichen Zeiten aufgrund von kurzfristigen Änderungen, an Feiertagen oder in den Schulferien abweichen können. Bitte informieren Sie sich vor Ihrem Besuch über die aktuell geltenden Öffnungszeiten.wordpress.solinger-vogelpark.de/?page_id=29<br> <br>",
+      "url": "https://www.solingen-live.de/?397550",
+      "category": "Natur, Gärten, Parks, Umwelt",
+      "subcategory": "solingen-live.de",
+      "eventStatus": "scheduled",
+      "sourceUrl": "solingen-live.de",
+      "sourceId": "397550",
+      "createdAt": "2022-01-21T08:37:58.279Z",
+      "updatedAt": "2022-01-21T08:37:58.279Z"
+    }
+  ]
+}
+

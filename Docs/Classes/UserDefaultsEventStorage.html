@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UserDefaultsEventStorage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/UserDefaultsEventStorage" class="dashAnchor"></a>
+    <a title="UserDefaultsEventStorage Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        UserDefaultsEventStorage Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEventRepository.html">DefaultEventRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEventWatchlistRepository.html">DefaultEventWatchlistRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventManager.html">OSCAEventManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsDIContainer.html">OSCAEventsDIContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsEventStorage.html">UserDefaultsEventStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsEventWatchlistStorage.html">UserDefaultsEventWatchlistStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EventUserDefaultsKeys.html">EventUserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventWatchlistUserDefaultsKeys.html">EventWatchlistUserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventError.html">OSCAEventError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventWatchlistError.html">OSCAEventWatchlistError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNotification.html">NSNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNotification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/OSCAClassRequestResource.html">OSCAClassRequestResource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EventStorage.html">EventStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventWatchlistStorage.html">EventWatchlistStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAEventRepository.html">OSCAEventRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAEventWatchlistRepository.html">OSCAEventWatchlistRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent.html">OSCAEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Offers.html">– Offers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/AttendanceMode.html">– AttendanceMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventWatchItem.html">OSCAEventWatchItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventWatchlist.html">OSCAEventWatchlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvents.html">OSCAEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsDependencies.html">OSCAEventsDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEvent.html">OSCALiveEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEventWatchItem.html">OSCALiveEventWatchItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEventWatchlist.html">OSCALiveEventWatchlist</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UserDefaultsEventStorage</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">UserDefaultsEventStorage</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UserDefaultsEventStorage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EventStorage.html">EventStorage</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera"></a>
+                    <a name="//apple_ref/swift/Alias/OSCAEventsPublisher" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">OSCAEventsPublisher</span> <span class="o">=</span> <span class="kt"><a href="../Structs/OSCAEvents.html">OSCAEvents</a></span><span class="o">.</span><span class="kt">OSCAEventsPublisher</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC03maxE5Limit04userC0ACSi_So06NSUserC0Ctcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(maxStorageLimit:userDefaults:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC03maxE5Limit04userC0ACSi_So06NSUserC0Ctcfc">init(maxStorageLimit:<wbr>userDefaults:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">maxStorageLimit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+     <span class="nv">userDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span> <span class="o">=</span> <span class="kt">UserDefaults</span><span class="o">.</span><span class="n">standard</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC14fetchAllEvents8maxCountSayAA9OSCAEventVGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAllEvents(maxCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC14fetchAllEvents8maxCountSayAA9OSCAEventVGSi_tF">fetchAllEvents(maxCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch all events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchAllEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of events</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC17fetchTodaysEvents8maxCountSayAA9OSCAEventVGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchTodaysEvents(maxCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC17fetchTodaysEvents8maxCountSayAA9OSCAEventVGSi_tF">fetchTodaysEvents(maxCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch today&rsquo;s events from all events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchTodaysEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of events</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC15fetchNextEvents8maxCount8nextDaysSayAA9OSCAEventVGSi_SitF"></a>
+                    <a name="//apple_ref/swift/Method/fetchNextEvents(maxCount:nextDays:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC15fetchNextEvents8maxCount8nextDaysSayAA9OSCAEventVGSi_SitF">fetchNextEvents(maxCount:<wbr>nextDays:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch today&rsquo;s plus next days&rsquo; events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchNextEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nextDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of events</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nextDays</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>number of days in the future</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC11fetchEvents8maxCount4withSayAA9OSCAEventVGSi_SStF"></a>
+                    <a name="//apple_ref/swift/Method/fetchEvents(maxCount:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC11fetchEvents8maxCount4withSayAA9OSCAEventVGSi_SStF">fetchEvents(maxCount:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch all events matching the query string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of events</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC3put6subsetSayAA9OSCAEventVGAH_tF"></a>
+                    <a name="//apple_ref/swift/Method/put(subset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC3put6subsetSayAA9OSCAEventVGAH_tF">put(subset:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>puts subset <code>events</code>into cache, upto maximum storage capacity,
+sorted by event&rsquo;s start date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">put</span><span class="p">(</span><span class="n">subset</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/EventStorage%20conformance"></a>
+                <a name="//apple_ref/swift/Section/EventStorage conformance" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/EventStorage%20conformance"></a>
+                  <h3 class="section-name"><span>EventStorage conformance</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC14fetchAllEvents8maxCount7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAllEvents(maxCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC14fetchAllEvents8maxCount7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_tF">fetchAllEvents(maxCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchAllEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UserDefaultsEventStorage.html#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC17fetchTodaysEvents8maxCount7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchTodaysEvents(maxCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC17fetchTodaysEvents8maxCount7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_tF">fetchTodaysEvents(maxCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchTodaysEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UserDefaultsEventStorage.html#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC15fetchNextEvents8maxCount8nextDays7Combine12AnyPublisherVySayAA9OSCAEventVGAA0P5ErrorOGSi_SitF"></a>
+                    <a name="//apple_ref/swift/Method/fetchNextEvents(maxCount:nextDays:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC15fetchNextEvents8maxCount8nextDays7Combine12AnyPublisherVySayAA9OSCAEventVGAA0P5ErrorOGSi_SitF">fetchNextEvents(maxCount:<wbr>nextDays:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchNextEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nextDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UserDefaultsEventStorage.html#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC11fetchEvents8maxCount4with7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_SStF"></a>
+                    <a name="//apple_ref/swift/Method/fetchEvents(maxCount:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC11fetchEvents8maxCount4with7Combine12AnyPublisherVySayAA9OSCAEventVGAA0N5ErrorOGSi_SStF">fetchEvents(maxCount:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UserDefaultsEventStorage.html#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents24UserDefaultsEventStorageC3put6subset7Combine12AnyPublisherVySayAA9OSCAEventVGAA0K5ErrorOGAK_tF"></a>
+                    <a name="//apple_ref/swift/Method/put(subset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents24UserDefaultsEventStorageC3put6subset7Combine12AnyPublisherVySayAA9OSCAEventVGAA0K5ErrorOGAK_tF">put(subset:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">put</span><span class="p">(</span><span class="n">subset</span> <span class="nv">events</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UserDefaultsEventStorage.html#/s:10OSCAEvents24UserDefaultsEventStorageC0A9Publishera">OSCAEventsPublisher</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

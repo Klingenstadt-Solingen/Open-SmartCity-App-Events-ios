@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DefaultEventRepository Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DefaultEventRepository" class="dashAnchor"></a>
+    <a title="DefaultEventRepository Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        DefaultEventRepository Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEventRepository.html">DefaultEventRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEventWatchlistRepository.html">DefaultEventWatchlistRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventManager.html">OSCAEventManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsDIContainer.html">OSCAEventsDIContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsEventStorage.html">UserDefaultsEventStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsEventWatchlistStorage.html">UserDefaultsEventWatchlistStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EventUserDefaultsKeys.html">EventUserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventWatchlistUserDefaultsKeys.html">EventWatchlistUserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventError.html">OSCAEventError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventWatchlistError.html">OSCAEventWatchlistError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNotification.html">NSNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNotification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/OSCAClassRequestResource.html">OSCAClassRequestResource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EventStorage.html">EventStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventWatchlistStorage.html">EventWatchlistStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAEventRepository.html">OSCAEventRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAEventWatchlistRepository.html">OSCAEventWatchlistRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent.html">OSCAEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Offers.html">– Offers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvent/AttendanceMode.html">– AttendanceMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventWatchItem.html">OSCAEventWatchItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventWatchlist.html">OSCAEventWatchlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEvents.html">OSCAEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsDependencies.html">OSCAEventsDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEvent.html">OSCALiveEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEventWatchItem.html">OSCALiveEventWatchItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCALiveEventWatchlist.html">OSCALiveEventWatchlist</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DefaultEventRepository</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">DefaultEventRepository</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DefaultEventRepository</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OSCAEventRepository.html">OSCAEventRepository</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC5cacheAA0C7Storage_pvp"></a>
+                    <a name="//apple_ref/swift/Property/cache" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC5cacheAA0C7Storage_pvp">cache</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cache</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EventStorage.html">EventStorage</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC7networkA2AVvp"></a>
+                    <a name="//apple_ref/swift/Property/network" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC7networkA2AVvp">network</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">network</span><span class="p">:</span> <span class="kt"><a href="../Structs/OSCAEvents.html">OSCAEvents</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC22eventPersistantStorage6moduleAcA0cG0_p_A2AVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(eventPersistantStorage:module:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC22eventPersistantStorage6moduleAcA0cG0_p_A2AVtcfc">init(eventPersistantStorage:<wbr>module:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">eventPersistantStorage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EventStorage.html">EventStorage</a></span><span class="p">,</span>
+     <span class="nv">module</span>                <span class="p">:</span> <span class="kt"><a href="../Structs/OSCAEvents.html">OSCAEvents</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC14fetchAllEvents8maxCount15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAllEvents(maxCount:cachingStrategy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC14fetchAllEvents8maxCount15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF">fetchAllEvents(maxCount:<wbr>cachingStrategy:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch all events with default strategy network then cache</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchAllEvents</span><span class="p">(</span> <span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                     <span class="nv">cachingStrategy</span><span class="p">:</span> <span class="kt">OSCARepository</span><span class="o">.</span><span class="kt">OSCACachingStrategy</span> <span class="o">=</span> <span class="o">.</span><span class="kt">NetworkThenCache</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">],</span> <span class="kt"><a href="../Enums/OSCAEventError.html">OSCAEventError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of events</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cachingStrategy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the way data requests are handled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list of all events</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC17fetchTodaysEvents8maxCount15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/fetchTodaysEvents(maxCount:cachingStrategy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC17fetchTodaysEvents8maxCount15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF">fetchTodaysEvents(maxCount:<wbr>cachingStrategy:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>fetch todays events with default strategy network then cache</p>
+
+<p>todays events is a subset of all events and it is policy to fetch always all events from mBaaS at the time</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchTodaysEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                       <span class="nv">cachingStrategy</span><span class="p">:</span> <span class="kt">OSCARepository</span><span class="o">.</span><span class="kt">OSCACachingStrategy</span> <span class="o">=</span> <span class="o">.</span><span class="kt">NetworkThenCache</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">],</span> <span class="kt"><a href="../Enums/OSCAEventError.html">OSCAEventError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>maximum amount of todays events</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cachingStrategy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the way data requests are handled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC15fetchNextEvents8maxCount8nextDays15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0Q5ErrorOGSi_Si14OSCAEssentials14OSCARepositoryO011OSCACachingM0OtF"></a>
+                    <a name="//apple_ref/swift/Method/fetchNextEvents(maxCount:nextDays:cachingStrategy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC15fetchNextEvents8maxCount8nextDays15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0Q5ErrorOGSi_Si14OSCAEssentials14OSCARepositoryO011OSCACachingM0OtF">fetchNextEvents(maxCount:<wbr>nextDays:<wbr>cachingStrategy:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchNextEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">nextDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">cachingStrategy</span><span class="p">:</span> <span class="kt">OSCARepository</span><span class="o">.</span><span class="kt">OSCACachingStrategy</span> <span class="o">=</span> <span class="o">.</span><span class="kt">NetworkThenCache</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">],</span> <span class="kt"><a href="../Enums/OSCAEventError.html">OSCAEventError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10OSCAEvents22DefaultEventRepositoryC11fetchEvents8maxCount4with15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_SS14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/fetchEvents(maxCount:with:cachingStrategy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10OSCAEvents22DefaultEventRepositoryC11fetchEvents8maxCount4with15cachingStrategy7Combine12AnyPublisherVySayAA9OSCAEventVGAA0O5ErrorOGSi_SS14OSCAEssentials14OSCARepositoryO011OSCACachingK0OtF">fetchEvents(maxCount:<wbr>with:<wbr>cachingStrategy:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchEvents</span><span class="p">(</span><span class="nv">maxCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">cachingStrategy</span><span class="p">:</span> <span class="kt">OSCARepository</span><span class="o">.</span><span class="kt">OSCACachingStrategy</span> <span class="o">=</span> <span class="o">.</span><span class="kt">NetworkThenCache</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/OSCAEvent.html">OSCAEvent</a></span><span class="p">],</span> <span class="kt"><a href="../Enums/OSCAEventError.html">OSCAEventError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

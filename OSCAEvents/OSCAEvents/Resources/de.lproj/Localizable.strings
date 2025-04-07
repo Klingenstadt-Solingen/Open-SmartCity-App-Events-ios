@@ -1,0 +1,12 @@
+/*
+  Localizable.strings
+  OSCAEvents
+
+  Created by Ömer Kurutay on 10.08.22.
+  
+*/
+
+// The text for price
+"price_title" = "Preis";
+// The text for event location
+"event_location_title" = "Veranstaltungsort";
